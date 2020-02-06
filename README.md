@@ -1,7 +1,9 @@
-# Show Me Saudi .. 
+# Show Me Saudi ..
+
 <br>
 <img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/home.png">
 <img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/home2.png">
+<br>
 <br>
 This App will help the user to find a local tour guide, and help the tour guy to start his/her own business using our platform to display their own services as a tour guide of the city .
 
@@ -18,11 +20,29 @@ This App will help the user to find a local tour guide, and help the tour guy to
 - [x] FireBase
 - [x] Express
 - [x] Heroku
+<br>
 
 ### Wireframes :
 :point_right: Watch it 
 <br><br>
 <img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/Image%20from%20iOS%20(1).jpg" width="350" height="500">
+<br>
+
+### Prototypes :
+:point_right: Watch it 
+<br><br>
+<img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/1.png" width="450" height="450">
+<img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/2.png" width="450" height="450">
+<br><img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/3.png" width="450" height="450">
+<br><img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/4.png" width="450" height="450">
+<br><img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/5.png" width="450" height="450">
+<br><img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/6.png" width="450" height="450">
+<br><img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/7.png" width="450" height="450">
+<br><img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/8.png" width="450" height="450">
+<br><img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/9.png" width="450" height="450">
+<br><img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/10.png" width="450" height="450">
+<br><img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/11.png" width="450" height="500">
+<br>
 <br>
 
 ### Prototypes :
@@ -54,6 +74,7 @@ This App will help the user to find a local tour guide, and help the tour guy to
 - [x] Tour guy & regular user have to signin to edit his/him profile
 - [x] regular user can rate tour guy & write comment on his profile . 
 - [x] Tour guy & regular user can contact us and read about us without sign up.
+<br>
 
 ## Future plans:
 - [x] Tour guy must accept or reject reservation. 
@@ -62,21 +83,22 @@ This App will help the user to find a local tour guide, and help the tour guy to
 - [x] Add Admin to manage the website.
 - [x] Make payment Transaction.
 - [x] Make chatting between users & tour guys.
-
+<br>
 
 ## Created by Golden Developers ..
 - Abdullah Binmahfouz.
 - Hanin Nouh.
 - Khadijah Saber.
 - Doaa Turkustani.
-<br>
+<br><br>
 
 ## Git Hub Links: 
 - https://github.com/DoaaMT/Tours
 - https://github.com/KOSaber/showmeSaudi_Front-end
 - https://github.com/abinm670/back-up_FrontEnd_showMeSaudi.
 - https://github.com/abinm670/showmeSaudi_Back-end
-<br> 
+
+<br> <br>
 
 ## Heroku Link: 
 - .

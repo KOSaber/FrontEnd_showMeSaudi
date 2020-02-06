@@ -162,6 +162,7 @@ class TourGuyProfile extends Component {
         console.log(error)
       })
 
+<<<<<<< HEAD
        
         if(jwt_decode(localStorage.usertoken).user.tourType == "tourUser"){
           console.log("im in if")
@@ -174,6 +175,17 @@ class TourGuyProfile extends Component {
             rateability: true
           })}
         
+=======
+
+      if(jwt_decode(localStorage.usertoken).user.tourType == "tourUser"){
+        console.log("im in if")
+        this.setState({
+          rateability: false
+        })}else {
+          this.setState({
+          rateability: true
+        })}
+>>>>>>> e6413209c4d9c607ec1cb0c3596afbca10f9a836
 
   }
 
@@ -562,10 +574,18 @@ class TourGuyProfile extends Component {
             </div>
             <div className="media-body">
               <h2 > {this.state.firstName + " " + this.state.lastName} </h2>
+<<<<<<< HEAD
               {this.state.rateability?<Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} />:
                <Rater total={5} rating={this.state.rate / this.state.raters}  interactive={false} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }}  /> }
               {/* <Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} />
               {this.showRate()} */}
+=======
+              {/* <Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} /> */}
+              {this.state.rateability?<Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} />:
+               <Rater total={5} rating={this.state.rate / this.state.raters}  interactive={false} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }}  /> }
+              
+              {this.showRate()}
+>>>>>>> e6413209c4d9c607ec1cb0c3596afbca10f9a836
               <p><strong>About me: {this.state.AboutMe}</strong></p>
               <p><strong>Price: {this.state.price}</strong></p>
               <p><strong>City: {this.state.city}</strong></p>
