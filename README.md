@@ -31,11 +31,11 @@ This App will help the user to find a local tour guide, and help the tour guy to
 - [x] Tour guy & regular user can view packages page to see all tour guys packages in all cities.
 - [x] Tour guy & regular user can view tour guy page to see all tour guys in all cities
 - [x] Tour user have to signup & add his packages .
-- [x] Tour user have to signin to delete his packages or account.
+- [x] Tour user have to signin to delete his packages, account & cancel booking.
 - [x] regular user have to signin to book with tour guy,view all his booking & cancel booking.
 - [x] regular user can't book with tour guy in same time twice.
 - [x] Tour guy & regular user have to signin to edit his/him profile
-- [x] regular user can rate tour guy & write commint on his profile . 
+- [x] regular user can rate tour guy & write comment on his profile . 
 - [x] Tour guy & regular user can contact us and read about us without sign up.
 
 ## Future plans:
