@@ -26,13 +26,17 @@ This App will help the user to find a local tour guide, and help the tour guy to
 <br>
 
 ## User Stories:
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
+- [x] Tour guy & regular user can view home page to see all cities that we covered without singin 
+- [x] if clicked on spacific city on home page it will show him/his all tour guys in that city.
+- [x] Tour guy & regular user can view packages page to see all tour guys packages in all cities.
+- [x] Tour guy & regular user can view tour guy page to see all tour guys in all cities
+- [x] Tour user have to signup & add his packages .
+- [x] Tour user have to signin to delete his packages or account.
+- [x] regular user have to signin to book with tour guy,view all his booking & cancel booking.
+- [x] regular user can't book with tour guy in same time twice.
+- [x] Tour guy & regular user have to signin to edit his/him profile
+- [x] regular user can rate tour guy & write commint on his profile . 
+- [x] Tour guy & regular user can contact us and read about us without sign up.
 
 ## Future plans:
 - [x] Tour guy must accept or reject reservation. 
