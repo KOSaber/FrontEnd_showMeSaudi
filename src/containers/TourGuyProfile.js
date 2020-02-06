@@ -43,7 +43,7 @@ class TourGuyProfile extends Component {
       isTouGuy: false,
       logedin: false,
       renderCom1: false,
-
+      rateability:true
     }
     this.edit = this.edit.bind(this);
     this.save = this.save.bind(this);
@@ -101,8 +101,6 @@ class TourGuyProfile extends Component {
       [e.target.name]: e.target.value
     })
   }
-
-
 
   componentDidMount() {
     //this to make sure it has token and apply the following
@@ -164,6 +162,19 @@ class TourGuyProfile extends Component {
         console.log(error)
       })
 
+       
+        if(jwt_decode(localStorage.usertoken).user.tourType == "tourUser"){
+          console.log("im in if")
+          
+          this.setState({
+            rateability: false
+          })}else {
+    
+            this.setState({
+            rateability: true
+          })}
+        
+
   }
 
   // store comments in the database
@@ -177,7 +188,7 @@ class TourGuyProfile extends Component {
 
   //updat the rate 
   componentDidUpdate() {
-    console.log("working " + this.state.rate + this.state.raters)
+    // console.log("working " + this.state.rate + this.state.raters)
     // upate user rate and save it in the backend 
     axios.put("http://localhost:7000/api/t-userRate/" + this.props.match.params.id + "/" + this.state.rate + "/" + this.state.raters)
       .then((res) => {
@@ -255,7 +266,15 @@ class TourGuyProfile extends Component {
 
   }
 
-
+// //r
+// checkrate = (e) => {
+//   if(this.state.logedin && this.state.tourType == "tourUser"){
+//     this.setState({
+//       rateability: false
+//     })}else {this.setState({
+//       rateability: true
+//     })}
+//   }
 
   // delete users 
   onsubmitTheStateToDelete = () => {
@@ -533,8 +552,9 @@ class TourGuyProfile extends Component {
     }
     // retrun only the data in the backend and display
     else {
-
+      console.log(this.state.rateability)
       return (
+        
         <div>
           <div className="TourGuyProfileCont">
             <div className="col-lg-5">
@@ -542,8 +562,10 @@ class TourGuyProfile extends Component {
             </div>
             <div className="media-body">
               <h2 > {this.state.firstName + " " + this.state.lastName} </h2>
-              <Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} />
-              {this.showRate()}
+              {this.state.rateability?<Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} />:
+               <Rater total={5} rating={this.state.rate / this.state.raters}  interactive={false} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }}  /> }
+              {/* <Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} />
+              {this.showRate()} */}
               <p><strong>About me: {this.state.AboutMe}</strong></p>
               <p><strong>Price: {this.state.price}</strong></p>
               <p><strong>City: {this.state.city}</strong></p>
