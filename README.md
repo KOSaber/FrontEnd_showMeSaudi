@@ -4,12 +4,12 @@
 
 :point_right: Watch it
 <br><br>
-<img src="src/img/brainMap.png">
+<img src="img/brainMap.png">
 <br>
 
 <br>
-<img src="src/img/home.png">
-<img src="src/img/home2.png">
+<img src="img/home.png">
+<img src="img/home2.png">
 <br>
 <br>
 This App will help the user to find a local tour guide, and help the tour guy to start his/her own business using our platform to display their own services as a tour guide of the city .
@@ -36,7 +36,7 @@ This App will help the user to find a local tour guide, and help the tour guy to
 
 :point_right: Watch it
 <br><br>
-<img src="https://github.com/KOSaber/back-up_FrontEnd_showMeSaudi/blob/khadijah/src/img/Image%20from%20iOS%20(1).jpg" width="350" height="500">
+<img src="img/Image%20from%20iOS%20(1).jpg" width="350" height="500">
 <br>
 
 ### Prototypes :
