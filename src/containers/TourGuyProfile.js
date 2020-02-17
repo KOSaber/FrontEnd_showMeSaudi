@@ -43,7 +43,7 @@ class TourGuyProfile extends Component {
       isTouGuy: false,
       logedin: false,
       renderCom1: false,
-      rateability:true
+
     }
     this.edit = this.edit.bind(this);
     this.save = this.save.bind(this);
@@ -102,6 +102,8 @@ class TourGuyProfile extends Component {
     })
   }
 
+
+
   componentDidMount() {
     //this to make sure it has token and apply the following
     localStorage.usertoken ?
@@ -111,15 +113,15 @@ class TourGuyProfile extends Component {
           jwt_decode(localStorage.usertoken).user.tourType,
         user:
           jwt_decode(localStorage.usertoken),
-        id:
-          jwt_decode(localStorage.usertoken).user._id
+        logID:
+        jwt_decode(localStorage.usertoken).user._id
       })
       :
       this.setState({ logedin: false })
 
+      
 
     // extract the token and get he user id 
-    this.setState({ user: jwt_decode(localStorage.usertoken) })
     axios.get(`http://localhost:7000/api/t-user/` + this.state.Tid)
       .then(response => {
         this.setState({ firstName: response.data.firstName })
@@ -149,7 +151,7 @@ class TourGuyProfile extends Component {
     axios.get("http://localhost:7000/api/t-users/" + this.state.Tid + "/packages")
 
       .then(res => {
-        console.log(res + "pack")
+        //console.log(res + "pack")
 
         for (let i in res.data) {
           this.setState({ name: this.state.name.concat(res.data[i].name) })
@@ -162,20 +164,6 @@ class TourGuyProfile extends Component {
         console.log(error)
       })
 
-<<<<<<< HEAD
-       
-        if(jwt_decode(localStorage.usertoken).user.tourType == "tourUser"){
-          console.log("im in if")
-          
-          this.setState({
-            rateability: false
-          })}else {
-    
-            this.setState({
-            rateability: true
-          })}
-        
-=======
 
       if(jwt_decode(localStorage.usertoken).user.tourType == "tourUser"){
         console.log("im in if")
@@ -185,14 +173,13 @@ class TourGuyProfile extends Component {
           this.setState({
           rateability: true
         })}
->>>>>>> e6413209c4d9c607ec1cb0c3596afbca10f9a836
 
   }
 
   // store comments in the database
   onsubmitTheStateToPosted = () => {
 
-    axios.post("http://localhost:7000/api/r-comment/" + this.state.Tid + "/" + this.state.id, this.state)
+    axios.post("http://localhost:7000/api/r-comment/" + this.state.Tid + "/" +this.state.logID, this.state)
       .then(res => console.log(res))
       .catch(err => console.log(err))
     console.log("posted")
@@ -200,11 +187,11 @@ class TourGuyProfile extends Component {
 
   //updat the rate 
   componentDidUpdate() {
-    // console.log("working " + this.state.rate + this.state.raters)
+    //console.log("working " + this.state.rate + this.state.raters)
     // upate user rate and save it in the backend 
     axios.put("http://localhost:7000/api/t-userRate/" + this.props.match.params.id + "/" + this.state.rate + "/" + this.state.raters)
       .then((res) => {
-        console.log("what data do u have ", res)
+       // console.log("what data do u have ", res)
       })
       .catch(err => console.log(err))
   }
@@ -243,7 +230,7 @@ class TourGuyProfile extends Component {
     }
     else {
       var datetoB = this.state.startDate.toDateString();
-      axios.post("http://localhost:7000/api/r-booking/" + this.state.Tid + "/" + this.state.id + "/" + datetoB, this.state)
+      axios.post("http://localhost:7000/api/r-booking/" + this.state.Tid + "/" + this.state.logID + "/" + datetoB, this.state)
         .then(
           (res) => {
             if (res.data == "Book is made successfully") {
@@ -278,15 +265,7 @@ class TourGuyProfile extends Component {
 
   }
 
-// //r
-// checkrate = (e) => {
-//   if(this.state.logedin && this.state.tourType == "tourUser"){
-//     this.setState({
-//       rateability: false
-//     })}else {this.setState({
-//       rateability: true
-//     })}
-//   }
+
 
   // delete users 
   onsubmitTheStateToDelete = () => {
@@ -347,7 +326,6 @@ class TourGuyProfile extends Component {
   }
 
   handleUploadPack = () => {
-    console.log("handleupload2");
     const { packImage } = this.state;
     const uploadTask = storage.ref(`images/${packImage.name}`).put(packImage);
     uploadTask.on('state_changed',
@@ -404,7 +382,6 @@ class TourGuyProfile extends Component {
   }
 
   handleUploadPack = () => {
-    console.log("handleupload2");
     const { packImage } = this.state;
     const uploadTask = storage.ref(`images/${packImage.name}`).put(packImage);
     uploadTask.on('state_changed',
@@ -564,9 +541,8 @@ class TourGuyProfile extends Component {
     }
     // retrun only the data in the backend and display
     else {
-      console.log(this.state.rateability)
+
       return (
-        
         <div>
           <div className="TourGuyProfileCont">
             <div className="col-lg-5">
@@ -574,18 +550,11 @@ class TourGuyProfile extends Component {
             </div>
             <div className="media-body">
               <h2 > {this.state.firstName + " " + this.state.lastName} </h2>
-<<<<<<< HEAD
-              {this.state.rateability?<Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} />:
-               <Rater total={5} rating={this.state.rate / this.state.raters}  interactive={false} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }}  /> }
-              {/* <Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} />
-              {this.showRate()} */}
-=======
               {/* <Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} /> */}
               {this.state.rateability?<Rater total={5} rating={this.state.rate / this.state.raters} style={{ cursor: 'pointer' }} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }} />:
                <Rater total={5} rating={this.state.rate / this.state.raters}  interactive={false} onRate={(rating) => { this.setState((prev) => ({ raters: prev.raters + 1, rate: rating.rating + prev.rate })); }}  /> }
               
               {this.showRate()}
->>>>>>> e6413209c4d9c607ec1cb0c3596afbca10f9a836
               <p><strong>About me: {this.state.AboutMe}</strong></p>
               <p><strong>Price: {this.state.price}</strong></p>
               <p><strong>City: {this.state.city}</strong></p>
@@ -594,8 +563,8 @@ class TourGuyProfile extends Component {
               <br />
               {(this.state.logedin && this.state.tourType == "regUser") ? <DatePicker selected={this.state.startDate} onChange={this.handleChange} /> : ""}
               {(this.state.logedin && this.state.tourType == "regUser") ? <div><Button onClick={this.onsubmitTheStateToBook} size="sm" > Book </Button></div> : ""}
-              {(this.state.logedin && this.state.tourType == "tourUser" && this.state.id == this.state.Tid) ? <Button variant="outline-primary" onClick={this.edit}>Edit Profile</Button> : ""}
-              {(this.state.logedin && this.state.tourType == "tourUser" && this.state.id == this.state.Tid) ? <Button variant="outline-primary" onClick={this.adding}>Add package</Button> : ""}
+              {(this.state.logedin && this.state.tourType == "tourUser" && this.state.logID == this.state.Tid) ? <Button variant="outline-primary" onClick={this.edit}>Edit Profile</Button> : ""}
+              {(this.state.logedin && this.state.tourType == "tourUser" && this.state.logID == this.state.Tid) ? <Button variant="outline-primary" onClick={this.adding}>Add package</Button> : ""}
             </div>
           </div>
 
@@ -620,7 +589,7 @@ class TourGuyProfile extends Component {
                             <span></span>
                             <Card.Body>{this.state.description[index]}</Card.Body>
 
-                            {(this.state.logedin && this.state.tourType == "tourUser" && this.state.id == this.state.Tid) ? <button onClick={() => this.deletePack(this.state.packId[index])}>Delete this package</button> : ""}
+                            {(this.state.logedin && this.state.tourType == "tourUser" && this.state.logID == this.state.Tid) ? <button onClick={() => this.deletePack(this.state.packId[index])}>Delete this package</button> : ""}
                           </Card.Body>
                         </Card>
                       </div>
