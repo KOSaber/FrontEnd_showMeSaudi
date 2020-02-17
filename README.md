@@ -93,7 +93,5 @@ This App will help the user to find a local tour guide, and help the tour guy to
 ## GitHub Links:
 - https://github.com/KOSaber/FrontEnd_showMeSaudi
 
-<br>
-
 ## Heroku Link:
 - https://back-endshowsaudi.herokuapp.com/
