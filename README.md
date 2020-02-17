@@ -90,16 +90,10 @@ This App will help the user to find a local tour guide, and help the tour guy to
 - Doaa Turkustani.
   <br><br>
 
-## Git Hub Links:
-
-- https://github.com/DoaaMT/Tours
-- https://github.com/KOSaber/showmeSaudi_Front-end
-- https://github.com/abinm670/back-up_FrontEnd_showMeSaudi.
-- https://github.com/abinm670/showmeSaudi_Back-end
+## GitHub Links:
+- https://github.com/KOSaber/FrontEnd_showMeSaudi
 
 <br> <br>
 
 ## Heroku Link:
 - https://back-endshowsaudi.herokuapp.com/
-## GitHub Link : 
--https://abinm670.github.io/back-up_FrontEnd_showMeSaudi/
