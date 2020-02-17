@@ -4,12 +4,11 @@
 
 :point_right: Watch it
 <br><br>
-<img src="/img/brainMap.png">
+<img src="src/img/brainMap.png">
 <br>
-
 <br>
-<img src="src/img/home.png">
-<img src="img/home2.png">
+<img src="/img/home.png">
+<img src="src/img/home2.png">
 <br>
 <br>
 This App will help the user to find a local tour guide, and help the tour guy to start his/her own business using our platform to display their own services as a tour guide of the city .
@@ -36,24 +35,24 @@ This App will help the user to find a local tour guide, and help the tour guy to
 
 :point_right: Watch it
 <br><br>
-<img src="img/Image%20from%20iOS%20(1).jpg" width="350" height="500">
+<img src="src/img/Image%20from%20iOS%20(1).jpg" width="350" height="500">
 <br>
 
 ### Prototypes :
 
 :point_right: Watch it
 <br><br>
-<img src="img/1.png" width="450" height="450">
-<img src="img/2.png" width="450" height="450">
-<br><img src="img/3.png" width="450" height="450">
-<br><img src="img/4.png" width="450" height="450">
-<br><img src="img/5.png" width="450" height="450">
-<br><img src="img/6.png" width="450" height="450">
-<br><img src="img/7.png" width="450" height="450">
-<br><img src="img/8.png" width="450" height="450">
-<br><img src="img/9.png" width="450" height="450">
-<br><img src="img/10.png" width="450" height="450">
-<br><img src="img/11.png" width="450" height="500">
+<img src="src/img/1.png" width="450" height="450">
+<img src="src/img/2.png" width="450" height="450">
+<br><img src="src/img/3.png" width="450" height="450">
+<br><img src="src/img/4.png" width="450" height="450">
+<br><img src="src/img/5.png" width="450" height="450">
+<br><img src="src/img/6.png" width="450" height="450">
+<br><img src="src/img/7.png" width="450" height="450">
+<br><img src="src/img/8.png" width="450" height="450">
+<br><img src="src/img/9.png" width="450" height="450">
+<br><img src="src/img/10.png" width="450" height="450">
+<br><img src="src/img/11.png" width="450" height="500">
 <br>
 <br>
 
