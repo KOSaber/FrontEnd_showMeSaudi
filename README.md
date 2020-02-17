@@ -7,7 +7,7 @@
 <img src="src/img/brainMap.png">
 <br>
 <br>
-<img src="/img/home.png">
+<img src="src/img/home.png">
 <img src="src/img/home2.png">
 <br>
 <br>
