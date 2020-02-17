@@ -8,7 +8,7 @@
 <br>
 
 <br>
-<img src="img/home.png">
+<img src="src/img/home.png">
 <img src="img/home2.png">
 <br>
 <br>
