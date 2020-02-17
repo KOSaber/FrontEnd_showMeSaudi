@@ -4,7 +4,7 @@
 
 :point_right: Watch it
 <br><br>
-<img src="img/brainMap.png">
+<img src="/img/brainMap.png">
 <br>
 
 <br>
