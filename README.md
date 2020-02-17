@@ -2,7 +2,6 @@
 
 ### Step One :
 
-:point_right: Watch it
 <br><br>
 <img src="src/img/brainMap.png">
 <br>
@@ -33,7 +32,6 @@ This App will help the user to find a local tour guide, and help the tour guy to
 
 ### Wireframes :
 
-:point_right: Watch it
 <br><br>
 <img src="src/img/Image%20from%20iOS%20(1).jpg" width="350" height="500">
 <br>
@@ -80,7 +78,7 @@ This App will help the user to find a local tour guide, and help the tour guy to
 - [x] Add Admin to manage the website.
 - [x] Make payment Transaction.
 - [x] Make chatting between users & tour guys.
-      <br>
+ <br>
 
 ## Created by Golden Developers ..
 
@@ -88,12 +86,12 @@ This App will help the user to find a local tour guide, and help the tour guy to
 - Hanin Nouh.
 - Khadijah Saber.
 - Doaa Turkustani.
-  <br><br>
+  <br>
 
 ## GitHub Links:
 - https://github.com/KOSaber/FrontEnd_showMeSaudi
 
-<br> <br>
+<br>
 
 ## Heroku Link:
 - https://back-endshowsaudi.herokuapp.com/
